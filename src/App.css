@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote {
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
+  max-height: 150px;
+  padding: 20px;
+  background: #fff;
+}
+
+.btn {
+  width: 90px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.socials {
+}
