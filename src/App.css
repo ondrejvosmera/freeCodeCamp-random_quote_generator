@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 .App {
@@ -9,22 +12,58 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 1s ease;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 600px;
+  max-height: fit-content;
+  padding: 35px;
+  background: #fff;
+  gap: 30px;
+  border-radius: 20px;
+  transition: 1s ease;
 }
 
 .quote {
-  margin: auto;
-  width: 100%;
-  max-width: 400px;
-  max-height: 150px;
-  padding: 20px;
-  background: #fff;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.author {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.btn-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
 }
 
 .btn {
-  width: 90px;
-  height: 30px;
+  font-size: 18px;
+  width: 130px;
+  height: 40px;
   cursor: pointer;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  transition: 1s ease;
 }
 
-.socials {
+.tweet {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  transition: 1s ease;
+  text-decoration: none;
 }
