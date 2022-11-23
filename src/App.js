@@ -9,6 +9,9 @@ const App = () => {
   const btnRef = useRef();
   const tweetRef = useRef();
   let randomColor = colors[Math.floor(Math.random() * colors.length)]
+
+// fetching quotes from api
+
   const getQuote = () => {
     fetch("https://type.fit/api/quotes")
     .then((res) => res.json())
@@ -22,6 +25,8 @@ const App = () => {
   useEffect(() => {
     getQuote();
   },[]);
+
+  // refs for color changing
 
   useEffect(() => {
     textRef.current.style.color = randomColor
